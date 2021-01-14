@@ -1,6 +1,6 @@
 # Notion Backup
 
-This repo makes a backup of OpenOwnership's Notion workspace.
+This repo is a fork of the backup scripts for OpenOwnership's Notion workspace, updated to run for the Global Data Barometer. 
 
 The code runs via a Github Action, which is scheduled to run at 4:05am every
 day, as well as whenever code is pushed to the repository.
