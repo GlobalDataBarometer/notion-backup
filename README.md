@@ -43,3 +43,5 @@ Google SSO.
 
 The Github Action is configured via secrets set up in [the repo settings](https://github.com/openownership/notion-backup/settings/secrets).
 These are then set as env vars for the python script to use.
+
+For a public repo, there must be edits every 60 days for the action to keep running. 
