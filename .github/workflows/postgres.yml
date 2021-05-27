@@ -1,4 +1,4 @@
-name: Backup notion
+name: Backup survey_tool_database
 
 on:
   push:
@@ -16,13 +16,16 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    - name: Install dependencies
+    - name: Install python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Install postgres dependencies
       run: |
         sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
         wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
         sudo apt-get update
         sudo apt-get install postgresql-client-12
-        pip install sh
     - name: Download backup and push to GDrive
       run: python postgres
       env:
