@@ -1,4 +1,4 @@
-import gzip
+import os
 from sh import pg_dump
 
 
