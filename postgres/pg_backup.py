@@ -38,7 +38,7 @@ def upload(name, session, folderId, mimeType):
     )
     start_response.raise_for_status()
     resumable_uri = start_response.headers.get('Location')
-    file = open('backup/{}'.format(name), 'rb')
+    file = open('{}'.format(name), 'rb')
     upload_response = session.put(resumable_uri, data=file)
     upload_response.raise_for_status()
 
