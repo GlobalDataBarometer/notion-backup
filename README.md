@@ -4,7 +4,7 @@ This repo is a fork of the backup scripts for OpenOwnership's Notion workspace, 
 
 The code runs via a Github Action, which is scheduled to run daily, as well as whenever code is pushed to the repository.
 
-It now contains backup routines for
+It now contains backup routines for:
 
 * Notion
 * The survey tool Postgres database
