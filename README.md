@@ -10,7 +10,7 @@ It now contains backup routines for:
 * The survey tool Postgres database
 ## Running the code locally
 
-The code to run the backup lives in /notion/export_notion.py. To run it:
+The code to run the backup lives in /notion/export_notion.py. To run it :
 
 1. Install requirements
 
